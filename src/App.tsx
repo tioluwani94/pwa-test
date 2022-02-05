@@ -12,11 +12,6 @@ function App() {
     // emailEditorRef.current.editor.loadDesign(templateJson);
   };
 
-  const onReady = () => {
-    // editor is ready
-    console.log("onReady");
-  };
-
   const exportHtml = () => {
     emailEditorRef.current.editor.exportHtml((data: any) => {
       const { design, html } = data;
